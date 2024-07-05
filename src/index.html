@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>fuzzy-tsukamoto</title>
+    <link rel="stylesheet" href="output.css" />
+  </head>
+  <body class="flex items-center justify-center min-h-screen bg-gray-100">
+    <div class="bg-white p-8 rounded-lg shadow-md w-full max-w-sm">
+      <h1 class="text-2xl font-bold text-center mb-4">Multiplication Form</h1>
+      <form id="multiplication-form">
+        <div class="mb-4">
+          <label for="num1" class="block text-gray-700">Number 1</label>
+          <input
+            type="number"
+            id="num1"
+            class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2"
+            required
+          />
+        </div>
+        <div class="mb-4">
+          <label for="num2" class="block text-gray-700">Number 2</label>
+          <input
+            type="number"
+            id="num2"
+            class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2"
+            required
+          />
+        </div>
+        <button
+          type="submit"
+          class="w-full bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-700"
+        >
+          Multiply
+        </button>
+      </form>
+      <div
+        id="result"
+        class="mt-4 text-center text-lg font-bold text-gray-700"
+      ></div>
+    </div>
+    <script src="multiplication.js"></script>
+  </body>
+</html>
